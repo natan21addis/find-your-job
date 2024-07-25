@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import {faExclamationTriangle } from "react-icons/fa";
+// import {faExclamationTriangle } from "react-icons/fa";
 const NotFoundPage = () => {
   return (
     <section className="text-center flex flex-col justify-center items-center h-96">
