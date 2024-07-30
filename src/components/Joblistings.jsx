@@ -1,8 +1,24 @@
+import { useState,useEffect } from 'react';
+
+
 import React from 'react'
 import jobs from '../jobs.json' 
 import Joblisting from './Joblisting'
 // import {FaMapMarker} from 'react-icons/fa'
 const Joblistings = ({isHome=false}) => {
+
+  const[jobs,setjobs]=useState([]);
+  const [loading,setloading]=useState(true);
+
+  useEffect( ()=>{
+    const fetchJobs=async ()=>{
+      const res=await fetch('http://localhost:8000/jobs');
+      const data=await res.json();
+      setjobs();
+    }
+    fetchJobs();
+  },[]);
+
    const JobListings=isHome ?jobs.slice(0,3):jobs;
   return ( 
    <section className="bg-blue-50 px-4 py-10">
