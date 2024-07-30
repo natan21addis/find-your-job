@@ -7,7 +7,7 @@ import ViewAllJobs from '../ViewAllJobs'
 const HomePage = () => {
   return (
   <>
-  <Navbar/>
+  
   <Hero/>
   <HomeCards/>
   <JobListings/>

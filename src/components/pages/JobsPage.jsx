@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from '../Navbar'
+import Joblistings from '../Joblistings'
+
 const JobsPage = () => {
-  return (
-    <>
-    <Navbar/>
-    <div>JobsPage</div>
-    </>
-  )
+  return <section className='bg-blue-50 px-4 py-6'>
+    <Joblistings/>
+  </section>
 }
 
 export default JobsPage
