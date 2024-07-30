@@ -7,4 +7,4 @@ const JobsPage = () => {
   </section>
 }
 
-export default JobsPage
+export default JobsPage;

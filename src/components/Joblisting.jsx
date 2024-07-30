@@ -46,4 +46,4 @@ const Joblisting = ({job}) => {
   )
 }
 
-export default Joblisting
+export default Joblisting;

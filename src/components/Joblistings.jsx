@@ -22,4 +22,4 @@ const Joblistings = ({isHome=false}) => {
   )
 }
 
-export default Joblistings
+export default Joblistings;
